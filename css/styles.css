@@ -6,12 +6,21 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
 body {
   padding:0;
   margin:0;
 }
+
 nav {
   margin: 0 50px;
+}
+@media (max-width: 768px)
+{
+  nav {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .header-wrapper {
@@ -20,9 +29,16 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   margin: 30px 40px;
 }
+@media(max-width:768) {
+  .logo {
+    margin: 30px auto;
+  }
+}
+
 .nav-btn {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -36,3 +52,35 @@ nav {
   color: #0065FC;
   border-top: 5px solid #0065FC;
 }
+
+@media (max-width: 768px)
+{
+  .header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    margin: 30px 70px;
+  }
+  .nav-btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-btn {
+    width: 50%;
+    text-align: center; 
+    font-size: 18px;
+    padding: 10px 0;
+    margin: 0 auto;
+    border-bottom: 3px solid transparent;
+  }
+  .nav-btn:hover {
+    color: #0065FC;
+    border-top: transparent;
+    border-bottom: 3px solid #0065FC;
+  }
+}  

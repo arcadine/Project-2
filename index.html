@@ -24,11 +24,22 @@
 
         <!-- main nav -->
         <header class="header-wrapper">
-            <img class="logo"  src="images/logo/Booki.png" alt="Booki logo" width="100px" height="47px">
+            <img 
+                class="logo" 
+                srcset="Booki.png 191w, Booki@3x.png 285w" 
+                sizes="(max-width: 768px) 285px"
+                src="images/logo/Booki@3x.png" 
+                alt="Booki logo" 
+                width="100px"
+            >
+
             <nav>
-                <a href="#accomodations" class="nav-btn">Accommodations</a>
-                <a href="#activities" class="nav-btn">Activities</a>
+                <div class="nav-btn-wrapper">
+                    <a href="#accomodations" class="nav-btn">Accommodations</a>
+                    <a href="#activities" class="nav-btn">Activities</a>
+                </div>
             </nav>
+
         </header>
 
        <section>
