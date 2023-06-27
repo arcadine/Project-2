@@ -24,15 +24,10 @@
 
         <!-- main nav -->
         <header class="header-wrapper">
-            <img 
-                class="logo" 
-                srcset="Booki.png 191w, Booki@3x.png 285w" 
-                sizes="(max-width: 768px) 285px"
-                src="images/logo/Booki@3x.png" 
-                alt="Booki logo" 
-                width="100px"
-            >
-
+            <picture class="logo">
+                <source srcset="images/logo/Booki@3x.png" media="(max-width: 768px)" width="150px" />
+                <img src="images/logo/Booki.png" alt="Booki logo" width="100px">
+            </picture>
             <nav>
                 <div class="nav-btn-wrapper">
                     <a href="#accomodations" class="nav-btn">Accommodations</a>
