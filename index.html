@@ -12,10 +12,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5a4a2aac01.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -37,11 +37,72 @@
 
         </header>
 
-       <section>
+        <!-- search and filter section -->
+        <section>
+            <h2>
+                Find a place for your dream vacation
+            </h2>
 
-       </section>
+            <p>
+                Downtown or in nature
+            </p>
 
-       <main>
+            <div>
+                <form>
+                    <label for="searchBar" id="searchLabel"><i class="fa-sharp fa-solid fa-location-dot" style="color: #000000;"></i></label>
+                    <input type="text" id="searchBar" name="search">
+                    <button type="submit" id="submitBtn"><i class="fa-solid fa-magnifying-glass" id="searchIcon" style="color: #ffffff;"></i>
+                                                         <span id="searchText">Search</span></button>
+                </form>
+            </div>
+                
+            <div>
+                <p>
+                    Filters
+                </p>
+                <button class="filter-btn">
+                    <span class="fa-stack filter-icon">
+                        <i class="fa-solid fa-circle fa-stack-2x" style="color:#DEEBFF;"></i>
+                        <i class="fa-solid fa-money-bill-wave fa-stack-1x fa-inverse" style="color: #0065fc;"></i>
+                    </span>
+                    <span class="filter-text">Low cost</span>
+                </button>
+                <button class="filter-btn">
+                    <span class="fa-stack filter-icon">
+                        <i class="fa-solid fa-circle fa-stack-2x" style="color:#DEEBFF;"></i>
+                        <i class="fa-solid fa-child-reaching fa-stack-1x fa-inverse" style="color: #0065fc;"></i>
+                    </span>
+                    <span class="filter-text">Family-friendly</span>
+                </button>
+                <button class="filter-btn">
+                    <span class="fa-stack filter-icon">
+                        <i class="fa-solid fa-circle fa-stack-2x" style="color:#DEEBFF;"></i>
+                        <i class="fa-solid fa-heart fa-stack-1x fa-inverse" style="color: #0065fc;"></i>
+                    </span>
+                    <span class="filter-text">Romantic</span>
+                </button>
+                <button class="filter-btn">
+                    <span class="fa-stack filter-icon">
+                        <i class="fa-solid fa-circle fa-stack-2x" style="color:#DEEBFF;"></i>
+                        <i class="fa-solid fa-dog fa-stack-1x fa-inverse" style="color: #0065fc;"></i>
+                    </span>
+                    <span class="filter-text">Pets allowed</span>
+                </button>
+            </div>
+
+            <div>
+                <span class="fa-stack" id="infoIcon">
+                    <i class="fa-regular fa-circle fa-stack-2x" style="color:#cecece;"></i>
+                    <i class="fa-solid fa-info fa-stack-1x fa-inverse" style="color: #0065fc;"></i>
+                </span>
+                <p>
+                    More than 500 accommodations are available in this city
+                </p>
+            </div>
+
+        </section>
+
+        <main>
            <section>
 
            </section>
@@ -49,10 +110,10 @@
            <section>
 
            </section>
-       </main> 
+        </main> 
 
-       <footer>
+        <footer>
 
-       </footer>
+        </footer>
     </body>
 </html>
