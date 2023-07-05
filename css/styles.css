@@ -12,12 +12,27 @@ body {
   margin:0;
 }
 
+@media (max-width: 768px) {
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 h2 {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 800;
   margin-bottom: 0;
   line-height: .5;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
 }
 
 nav {
@@ -34,6 +49,12 @@ nav {
 p {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-size: 14px;
+}
+@media (max-width: 768px) 
+{
+  p {
+    font-size: 16px;
+  }
 }
 
 textarea:focus, input:focus{
@@ -57,15 +78,31 @@ textarea:focus, input:focus{
   position: relative;
   width: max-content;
 }
+@media (max-width: 768px)
+{
+  .filter-btn {
+    margin: 0 0 20px 0;
+    border-radius: 30px;
+    height: 56px;
+  }
+}
 .filter-btn:hover {
   background-color: #0065FC;
   color: white;
+  cursor: pointer;
 }
 
 .filter-icon.fa-stack {
   font-size: 20px;
   position: absolute;
   left: -7px;
+}
+@media (max-width: 768px)
+{
+  .filter-icon.fa-stack {
+    font-size: 28px;
+    left: -9px;
+  }
 }
 
 .filter-text {
@@ -74,6 +111,13 @@ textarea:focus, input:focus{
   font-weight: 800;
   margin-left: 36px;
   margin-right: 10px;
+}
+@media (max-width: 768px)
+{
+  .filter-text {
+    font-size: 20px;
+    margin-left: 62px;
+  }
 }
 
 .header-wrapper {
@@ -99,10 +143,27 @@ textarea:focus, input:focus{
 .nav-btn:hover {
   color: #0065FC;
   border-top: 5px solid #0065FC;
+  cursor: pointer;
 }
 
 .search-filter {
   margin: 5px 40px;
+}
+
+#filterButtons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (max-width: 768px)
+{
+  #filterButtons{
+    justify-content: space-between;
+    align-content: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
 
 #filterLabel {
@@ -111,6 +172,12 @@ textarea:focus, input:focus{
   font-size: 15px;
   font-weight: 800;
 }
+@media (max-width: 768px)
+{
+  #filterLabel {
+    font-size: 20px;
+  }
+}
 
 #filterSec {
   display: flex;
@@ -118,6 +185,15 @@ textarea:focus, input:focus{
   justify-content: flex-start;
   align-items: center;
   margin: 20px 0;
+}
+@media (max-width: 768px)
+{
+  #filterSec {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 #infoIcon.fa-stack {
@@ -132,6 +208,15 @@ textarea:focus, input:focus{
   justify-content: flex-start;
   align-items: center;
 }
+@media (max-width: 768px) 
+{
+  #infoSec {
+    align-items: flex-start;
+  }
+  #infoText {
+    margin: 0 0 0 15px;
+  }
+}
 
 #searchBar {
   margin: -4px;
@@ -144,6 +229,14 @@ textarea:focus, input:focus{
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 800;
+}
+@media (max-width: 768px)
+{
+  #searchBar {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+  }
 }
 
 #searchIcon{
@@ -161,6 +254,23 @@ textarea:focus, input:focus{
   height: 42px;
   padding: 12px 15px;
   border-radius: 12px 0 0 12px;
+}
+@media (max-width: 768px) 
+{
+  #searchLabel {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) 
+{
+  #searchSec {
+    margin-top: 30px;
+  }
 }
 
 #searchText {
@@ -183,6 +293,18 @@ textarea:focus, input:focus{
   font-size: 15px;
   font-weight: 800;
   color: white;
+}
+#submitBtn:hover {
+  cursor: pointer;
+}
+@media (max-width: 768px)
+{
+  #submitBtn {
+    border-radius: 12px;
+    padding: 0 20px;
+    height: 50px;
+    font-size: 17px;
+  }
 }
 
 
