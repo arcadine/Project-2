@@ -39,7 +39,7 @@
 
         <!-- search and filter section -->
         <section class="search-filter">
-            <h2>
+            <h2 id="searchHeader">
                 Find a place for your dream vacation
             </h2>
 
@@ -50,7 +50,7 @@
             <div id="searchSec">
                 <form>
                     <label for="searchBar" id="searchLabel"><i class="fa-sharp fa-solid fa-location-dot" style="color: #000000;"></i></label>
-                    <input type="text" id="searchBar" name="search">
+                    <input type="text" id="searchBar" name="search" placeholder="Marseille, France">
                     <button type="submit" id="submitBtn"><i class="fa-solid fa-magnifying-glass" id="searchIcon" style="color: #ffffff;"></i>
                                                          <span id="searchText">Search</span></button>
                 </form>
@@ -63,29 +63,29 @@
                 <div id="filterButtons">
                     <button class="filter-btn">
                         <span class="filter-icon fa-stack">
-                            <i class="fa-solid fa-circle fa-stack-2x" style="color:#DEEBFF;"></i>
-                            <i class="fa-solid fa-money-bill-wave fa-stack-1x fa-inverse" style="color: #0065fc;"></i>
+                            <i class="fa-solid fa-circle fa-stack-2x icon-light-blue"></i>
+                            <i class="fa-solid fa-money-bill-wave fa-stack-1x icon-blue"></i>
                         </span>
                         <span class="filter-text">Low cost</span>
                     </button>
                     <button class="filter-btn">
                         <span class="filter-icon fa-stack">
-                            <i class="fa-solid fa-circle fa-stack-2x" style="color:#DEEBFF;"></i>
-                            <i class="fa-solid fa-child-reaching fa-stack-1x fa-inverse" style="color: #0065fc;"></i>
+                            <i class="fa-solid fa-circle fa-stack-2x icon-light-blue"></i>
+                            <i class="fa-solid fa-child-reaching fa-stack-1x icon-blue"></i>
                         </span>
                         <span class="filter-text">Family-friendly</span>
                     </button>
                     <button class="filter-btn">
                         <span class="filter-icon fa-stack">
-                            <i class="fa-solid fa-circle fa-stack-2x" style="color:#DEEBFF;"></i>
-                            <i class="fa-solid fa-heart fa-stack-1x fa-inverse" style="color: #0065fc;"></i>
+                            <i class="fa-solid fa-circle fa-stack-2x icon-light-blue"></i>
+                            <i class="fa-solid fa-heart fa-stack-1x icon-blue"></i>
                         </span>
                         <span class="filter-text">Romantic</span>
                     </button>
                     <button class="filter-btn">
                         <span class="filter-icon fa-stack">
-                            <i class="fa-solid fa-circle fa-stack-2x" style="color:#DEEBFF;"></i>
-                            <i class="fa-solid fa-dog fa-stack-1x fa-inverse" style="color: #0065fc;"></i>
+                            <i class="fa-solid fa-circle fa-stack-2x icon-light-blue"></i>
+                            <i class="fa-solid fa-dog fa-stack-1x icon-blue"></i>
                         </span>
                         <span class="filter-text">Pets allowed</span>
                     </button>
@@ -94,8 +94,8 @@
 
             <div id="infoSec">
                 <span class="fa-stack" id="infoIcon">
-                    <i class="fa-regular fa-circle fa-stack-2x" style="color:#f2f2f2;"></i>
-                    <i class="fa-solid fa-info fa-stack-1x fa-inverse" style="color: #0065fc;"></i>
+                    <i class="fa-regular fa-circle fa-stack-2x icon-grey"></i>
+                    <i class="fa-solid fa-info fa-stack-1x icon-blue"></i>
                 </span>
                 <p id="infoText">
                     More than 500 accommodations are available in this city
@@ -108,135 +108,138 @@
             <section id="acmdtnsMostpopSec">
                 <section id="accommodations">
                     <h2>Accommodations in Marseille</h2>
-                    <div class="acmdtns-col">
-                        <a href="#">
-                            <div class="acmdtns-card">
-                                <div class="acmdtns-pic">
-                                    <picture>
-                                        <source srcset="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" media="(max-width: 768px)"/>
-                                        <img src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="A room at Auberge la Cannebière">
-                                    </picture>
+                    <div id="acmdtnsCards">
+                        <div class="acmdtns-col">
+                            <a href="#" class="ac-card-wrapper">
+                                <div class="acmdtns-card">
+                                    <div class="acmdtns-pic">
+                                        <picture>
+                                            <source srcset="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" media="(max-width: 768px)"/>
+                                            <img src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="A room at Auberge la Cannebière">
+                                        </picture>
+                                    </div>
+                                    <p class="ac-card-title">Auberge la Cannebière</p>
+                                    <p class="ac-card-desc">Night starting at <strong>25€</strong></p>
+                                    <div class="acmdtns-stars">
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-grey"></i>
+                                    </div>
                                 </div>
-                                <p class="card-title">Auberge la Cannebière</p>
-                                <p class="card-desc">Night starting at <strong>25€</strong></p>
-                                <div class="acmdtns-stars">
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #f2f2f2;"></i>
+                            </a>
+                            <a href="#" class="ac-card-wrapper">
+                                <div class="acmdtns-card">
+                                    <div class="acmdtns-pic">
+                                        <picture>
+                                            <source srcset="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" media="(max-width: 768px)"/>
+                                            <img src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="A room at Hôtel de la mer">
+                                        </picture>
+                                    </div>
+                                    <p class="ac-card-title">Hôtel de la mer</p>
+                                    <p class="ac-card-desc">Night starting at <strong>46€</strong></p>
+                                    <div class="acmdtns-stars">
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-grey"></i>
+                                        <i class="fa-solid fa-star icon-grey"></i>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="acmdtns-card">
-                                <div class="acmdtns-pic">
-                                    <picture>
-                                        <source srcset="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" media="(max-width: 768px)"/>
-                                        <img src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="A room at Hôtel de la mer">
-                                    </picture>
+                            </a>
+                        </div>
+                        <div class="acmdtns-col">
+                            <a href="#" class="ac-card-wrapper">
+                                <div class="acmdtns-card">
+                                    <div class="acmdtns-pic">
+                                        <picture>
+                                            <source srcset="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" media="(max-width: 768px)"/>
+                                            <img src="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="A room at Hôtel du port">
+                                        </picture>
+                                    </div>
+                                    <p class="ac-card-title">Hôtel du port</p>
+                                    <p class="ac-card-desc">Night starting at <strong>52€</strong></p>
+                                    <div class="acmdtns-stars">
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                    </div>
                                 </div>
-                                <p class="card-title">Hôtel de la mer</p>
-                                <p class="card-desc">Night starting at <strong>46€</strong></p>
-                                <div class="acmdtns-stars">
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #f2f2f2;"></i>
-                                    <i class="fa-solid fa-star" style="color: #f2f2f2;"></i>
+                            </a>
+                            <a href="#" class="ac-card-wrapper">
+                                <div class="acmdtns-card">
+                                    <div class="acmdtns-pic">
+                                        <picture>
+                                            <source srcset="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" media="(max-width: 768px)"/>
+                                            <img src="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="A room at Auberge Le Panier">
+                                        </picture>
+                                    </div>
+                                    <p class="ac-card-title">Auberge Le Panier</p>
+                                    <p class="ac-card-desc">Night starting at <strong>23€</strong></p>
+                                    <div class="acmdtns-stars">
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-grey"></i>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+                        <div class="acmdtns-col">
+                            <a href="#" class="ac-card-wrapper">
+                                <div class="acmdtns-card">
+                                    <div class="acmdtns-pic">
+                                        <picture>
+                                            <source srcset="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" media="(max-width: 768px)"/>
+                                            <img src="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="A room at Les mouettes Hotel">
+                                        </picture>
+                                    </div>
+                                    <p class="ac-card-title">Les mouettes Hotel</p>
+                                    <p class="ac-card-desc">Night starting at <strong>76€</strong></p>
+                                    <div class="acmdtns-stars">
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-grey"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="ac-card-wrapper">
+                                <div class="acmdtns-card">
+                                    <div class="acmdtns-pic">
+                                        <picture>
+                                            <source srcset="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" media="(max-width: 768px)"/>
+                                            <img src="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="A room at Hôtel chez Amina">
+                                        </picture>
+                                    </div>
+                                    <p class="ac-card-title">Hôtel chez Amina</p>
+                                    <p class="ac-card-desc">Night starting at <strong>96€</strong></p>
+                                    <div class="acmdtns-stars">
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                        <i class="fa-solid fa-star icon-blue"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="acmdtns-col">
-                        <a href="#">
-                            <div class="acmdtns-card">
-                                <div class="acmdtns-pic">
-                                    <picture>
-                                        <source srcset="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" media="(max-width: 768px)"/>
-                                        <img src="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="A room at Hôtel du port">
-                                    </picture>
-                                </div>
-                                <p class="card-title">Hôtel du port</p>
-                                <p class="card-desc">Night starting at <strong>52€</strong></p>
-                                <div class="acmdtns-stars">
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="acmdtns-card">
-                                <div class="acmdtns-pic">
-                                    <picture>
-                                        <source srcset="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" media="(max-width: 768px)"/>
-                                        <img src="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="A room at Auberge Le Panier">
-                                    </picture>
-                                </div>
-                                <p class="card-title">Auberge Le Panier</p>
-                                <p class="card-desc">Night starting at <strong>23€</strong></p>
-                                <div class="acmdtns-stars">
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #f2f2f2;"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="acmdtns-col">
-                        <a href="#">
-                            <div class="acmdtns-card">
-                                <div class="acmdtns-pic">
-                                    <picture>
-                                        <source srcset="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" media="(max-width: 768px)"/>
-                                        <img src="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="A room at Les mouettes Hotel">
-                                    </picture>
-                                </div>
-                                <p class="card-title">Les mouettes Hotel</p>
-                                <p class="card-desc">Night starting at <strong>76€</strong></p>
-                                <div class="acmdtns-stars">
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #f2f2f2;"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="acmdtns-card">
-                                <div class="acmdtns-pic">
-                                    <picture>
-                                        <source srcset="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" media="(max-width: 768px)"/>
-                                        <img src="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="A room at Hôtel chez Amina">
-                                    </picture>
-                                </div>
-                                <p class="card-title">Hôtel chez Amina</p>
-                                <p class="card-desc">Night starting at <strong>96€</strong></p>
-                                <div class="acmdtns-stars">
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <p><strong>Show more</strong></p>
+                    <p id="showMore">Show more</p>
                 </section>
 
                 <section id="mostPopular">
                     <div id="mostPopHeading">
                         <h2>Most Popular</h2>
-                        <i></i>
+                        <i  class="fa-solid fa-star icon-black"></i>
                     </div>
-                    <a href="#">
+                    
+                    <a href="#" class="pop-card-wrapper">
                         <div class="most-pop-card">
                             <div class="most-pop-pic">
                                 <picture>
@@ -245,19 +248,19 @@
                                 </picture>
                             </div>
                             <div class="most-pop-info">
-                                <p class="card-title">Morning Sun Hotel</p>
-                                <p class="card-desc">Night starting at <strong>128€</strong></p>
+                                <p class="pop-card-title">Morning Sun Hotel</p>
+                                <p class="pop-card-desc">Night starting at <strong>128€</strong></p>
                                 <div class="most-pop-stars">
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
+                                    <i class="fa-solid fa-star icon-blue"></i>
+                                    <i class="fa-solid fa-star icon-blue"></i>
+                                    <i class="fa-solid fa-star icon-blue"></i>
+                                    <i class="fa-solid fa-star icon-blue"></i>
+                                    <i class="fa-solid fa-star icon-blue"></i>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="#" class="pop-card-wrapper">
                         <div class="most-pop-card">
                             <div class="most-pop-pic">
                                 <picture>
@@ -266,19 +269,19 @@
                                 </picture>
                             </div>
                             <div class="most-pop-info">
-                                <p class="card-title">Au cœur de l'eau Bed and Breakfast</p>
-                                <p class="card-desc">Night starting at <strong>71€</strong></p>
+                                <p class="pop-card-title">Au cœur de l'eau Bed and Breakfast</p>
+                                <p class="pop-card-desc">Night starting at <strong>71€</strong></p>
                                 <div class="most-pop-stars">
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #f2f2f2;"></i>
+                                    <i class="fa-solid fa-star icon-blue"></i>
+                                    <i class="fa-solid fa-star icon-blue"></i>
+                                    <i class="fa-solid fa-star icon-blue"></i>
+                                    <i class="fa-solid fa-star icon-blue"></i>
+                                    <i class="fa-solid fa-star icon-grey"></i>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="#" class="pop-card-wrapper">
                         <div class="most-pop-card">
                             <div class="most-pop-pic">
                                 <picture>
@@ -287,14 +290,14 @@
                                 </picture>
                             </div>
                             <div class="most-pop-info">
-                                <p class="card-title">Tout bleu et Blanc Hotel</p>
-                                <p class="card-desc">Night starting at <strong>68€</strong></p>
+                                <p class="pop-card-title">Tout bleu et Blanc Hotel</p>
+                                <p class="pop-card-desc">Night starting at <strong>68€</strong></p>
                                 <div class="most-pop-stars">
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #0065fc;"></i>
-                                    <i class="fa-solid fa-star" style="color: #f2f2f2;"></i>
+                                    <i class="fa-solid fa-star icon-blue"></i>
+                                    <i class="fa-solid fa-star icon-blue"></i>
+                                    <i class="fa-solid fa-star icon-blue"></i>
+                                    <i class="fa-solid fa-star icon-blue"></i>
+                                    <i class="fa-solid fa-star icon-grey"></i>
                                 </div>
                             </div>
                         </div>
