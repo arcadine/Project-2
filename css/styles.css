@@ -19,7 +19,7 @@ h2 {
 }
 
 img {
-  max-width: 100%;
+  height: 100%;
 }
 
 input::placeholder {
@@ -42,37 +42,47 @@ textarea:focus, input:focus{
 .ac-card-wrapper {
   color: black;
   text-decoration: none;
+  width: 30%;
 }
 
 .acmdtns-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   text-align: left;
   background-color: white;
   border-radius: 15px;
+  padding: 5px;
+  height: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(211, 211, 211, 1);
 }
 
-.acmdtns-col {
+.acmdtns-row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  width: 30%;
+  width: 90%;
 }
 
 .acmdtns-pic {
   height: 90px;
+  width: 100%;
   overflow: hidden;
   display: inline-block;
   object-fit: cover;
-  margin: 5px 5px 0 5px;
   border-radius: 10px 10px 0 0;
+}
+.acmdtns-pic > picture > img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .acmdtns-stars {
-  font-size: 14px;
+  font-size: 12px;
   margin: 7px 15px;
 }
 
@@ -158,6 +168,8 @@ textarea:focus, input:focus{
   background-color: white;
   border-radius: 15px;
   height: 100%;
+  padding: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(211, 211, 211, 1);
 }
 
 .most-pop-info {
@@ -165,20 +177,25 @@ textarea:focus, input:focus{
   flex-direction: column;
   justify-content: space-between;
   width: 65%;
+  height: 80%;
 }
 
 .most-pop-pic {
-  margin: 5px;
   border-radius: 10px 0 0 10px;
-  height: 100px;
+  height: 100%;
   width: 30%;
   overflow: hidden;
   object-fit: cover;
 }
+.most-pop-pic > picture > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
 .most-pop-stars {
-  font-size: 14px;
-  margin: 20px 10px 10px 10px;
+  font-size: 12px;
+  margin: 20px 10px 0px 10px;
 }
 
 .nav-btn {
@@ -201,26 +218,14 @@ textarea:focus, input:focus{
 }
 
 .pop-card-title {
-  margin: 10px 15px 0 10px;
+  margin: 0 15px 0 10px;
   font-weight: bold;
-  height: 28px;
 }
 
 .pop-card-wrapper {
   color: black;
   text-decoration: none;
   height: 30%;
-}
-
-.pop-img {
-  overflow: hidden; 
-  width: 130px;
-  height: 150px;
-  display: inline-block;
-}
-
-.pop-img > img {
-  object-fit: cover;
 }
 
 .search-filter {
@@ -230,7 +235,7 @@ textarea:focus, input:focus{
 #accommodations {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   max-width: 60%;
   background-color: #f2f2f2;
   border-radius: 15px;
@@ -241,13 +246,13 @@ textarea:focus, input:focus{
 #acmdtnsCards {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
   gap: 20px;
-  max-height: 70%;
 }
 
-#acmdtnsMostpopSec {
+#acmdtnsMostPopSec {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -301,12 +306,20 @@ textarea:focus, input:focus{
 #mostPopular {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   max-width: 30%;
   background-color: #f2f2f2;
   border-radius: 15px;
   padding: 25px;
   gap: 15px;
+}
+
+#popCardsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
 }
 
 #searchBar {
@@ -384,6 +397,15 @@ textarea:focus, input:focus{
   p {
     font-size: 16px;
   }
+  
+  .ac-card-wrapper {
+    width: 90%;
+    height: 280px;
+  }
+
+  .acmdtns-pic {
+    height: 65%;
+  }
 
   .filter-btn {
     margin: 0 0 20px 0;
@@ -412,6 +434,10 @@ textarea:focus, input:focus{
     margin: 30px 70px;
   }
 
+  .most-pop-info {
+    width: 68%;
+  }
+
   .nav-btn-wrapper {
     display: flex;
     flex-direction: row;
@@ -435,9 +461,33 @@ textarea:focus, input:focus{
     border-bottom: 3px solid #0065FC;
   }
 
+  .pop-card-wrapper {
+    height: 130px;
+  }
+
+  .search-filter {
+    margin-bottom: 20px;
+  }
+
+  #accommodations {
+    max-width: 100%;
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    gap: 15px;
+  }
+
+  #acmdtnsMostPopSec {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+
   #filterButtons {
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: stretch;
+    gap: 0 20px;
     width: 100%;
   }
 
@@ -455,8 +505,23 @@ textarea:focus, input:focus{
   #infoSec {
     align-items: flex-start;
   }
+
   #infoText {
     margin: 0 0 0 15px;
+  }
+
+  #mostPopular {
+    justify-content: flex-start;
+    max-width: 100%;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 0;
+    padding: 25px;
+    gap: 15px;
+  }
+
+  #popCardsWrapper {
+    gap: 20px;
   }
 
   #searchBar {
@@ -495,4 +560,193 @@ textarea:focus, input:focus{
     height: 50px;
     font-size: 17px;
   }
-}  
+} 
+
+@media (max-width: 768px) and (min-width: 768px)
+{
+  /*adjusted for tablet only*/
+  .ac-card-wrapper {
+    width: 45%;
+    height: 250px;
+  }
+
+  .acmdtns-pic {
+    height: 130px;
+  }
+
+  /*same as mobile*/
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  nav {
+    margin: 0;
+    width: 100%;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .filter-btn {
+    margin: 0 0 20px 0;
+    border-radius: 30px;
+    height: 56px;
+  }
+
+  .filter-icon.fa-stack {
+    font-size: 28px;
+    left: -9px;
+  }
+
+  .filter-text {
+    font-size: 20px;
+    margin-left: 62px;
+  }
+
+  .header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    margin: 30px 70px;
+  }
+
+  .most-pop-info {
+    width: 68%;
+  }
+
+  .nav-btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-btn {
+    width: 50%;
+    text-align: center; 
+    font-size: 18px;
+    padding: 10px 0;
+    margin: 0 auto;
+    border-top: none;
+    border-bottom: 3px solid transparent;
+  }
+
+  .nav-btn:hover {
+    border-top: none;
+    color: #0065FC;
+    border-bottom: 3px solid #0065FC;
+  }
+
+  .pop-card-wrapper {
+    height: 130px;
+  }
+
+  .search-filter {
+    margin-bottom: 20px;
+  }
+
+  #accommodations {
+    max-width: 100%;
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    gap: 15px;
+  }
+
+  #acmdtnsMostPopSec {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  #filterButtons {
+    justify-content: flex-start;
+    align-content: stretch;
+    gap: 0 20px;
+    width: 100%;
+  }
+
+  #filterLabel {
+    font-size: 20px;
+  }
+
+  #filterSec {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  #infoSec {
+    align-items: flex-start;
+  }
+
+  #infoText {
+    margin: 0 0 0 15px;
+  }
+
+  #mostPopular {
+    justify-content: flex-start;
+    max-width: 100%;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 0;
+    padding: 25px;
+    gap: 15px;
+  }
+
+  #popCardsWrapper {
+    gap: 20px;
+  }
+
+  #searchBar {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  #searchHeader {
+    line-height: 1.2;
+  }
+
+  #searchIcon {
+    display: block;
+  }
+
+  #searchLabel {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 17px;
+  }
+
+  #searchSec {
+    margin-top: 30px;
+  }
+
+  #searchText {
+    display: none;
+  }
+
+  #submitBtn {
+    border-radius: 12px;
+    padding: 0 20px;
+    height: 50px;
+    font-size: 17px;
+  }
+}
