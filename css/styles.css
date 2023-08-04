@@ -547,6 +547,10 @@ textarea:focus, input:focus{
 /*mobile styling*/
 @media (max-width: 768px)
 {
+  footer {
+    flex-direction: column;
+  }
+  
   form {
     display: flex;
     flex-direction: row;
@@ -606,6 +610,18 @@ textarea:focus, input:focus{
   .filter-text {
     font-size: 20px;
     margin-left: 62px;
+  }
+
+  .footer-menu-items {
+    font-size: 18px;
+  }
+
+  .footer-subheader {
+    font-size: 24px;
+  }
+  
+  .footer-submenu {
+    width: 100%;
   }
 
   .header-wrapper {
@@ -818,6 +834,10 @@ textarea:focus, input:focus{
 
   .acmdtns-pic {
     height: 130px;
+  }
+
+  .footer-submenu {
+    width: 28%;
   }
 
   /*same as mobile*/
