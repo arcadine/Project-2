@@ -12,3 +12,6 @@ Working on this project, you'll develop essential skills in responsive design, e
 
 # Project Brief:
 https://course.oc-static.com/projects/Front-End+V2/P2+HTML+%26+CSS/WD+P2+-+Technical+and+functional+specifications.pdf
+
+# Project Presentation Video:
+https://drive.google.com/file/d/1saHnkpf4UtzLCY60hKGldVTULRJFCn2F/view?usp=drive_link
